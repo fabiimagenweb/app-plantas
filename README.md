@@ -1,0 +1,2 @@
+# repositorio-intelligent-zone
+Local
