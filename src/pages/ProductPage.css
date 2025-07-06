@@ -1,0 +1,45 @@
+.product-page {
+  padding: 2rem;
+}
+
+.plantas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.planta-card {
+  background-color: #f0fff0;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 160px;
+  text-align: center;
+}
+
+.planta-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.planta-card h4 {
+  margin: 0.5rem 0 0.2rem;
+}
+
+.planta-card button {
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.planta-card button:disabled {
+  background-color: gray;
+  cursor: default;
+}

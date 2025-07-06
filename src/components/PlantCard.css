@@ -1,0 +1,14 @@
+/* Estilos para PlantCard (puedes personalizar después) */
+.plant-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  margin: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.plant-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
