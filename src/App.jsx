@@ -8,7 +8,8 @@ import Header from './components/Header';
 
 const AppRoutes = () => {
   const location = useLocation();
-  const esLanding = location.pathname === '/';
+  // Esta línea es para controlar la visibilidad del Header, no afecta el enrutamiento base
+  const esLanding = location.pathname === '/'; 
 
   return (
     <>
@@ -17,6 +18,8 @@ const AppRoutes = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/products" element={<ProductPage />} />
         <Route path="/cart" element={<CartPage />} />
+        {/* Opcional: Ruta para manejar 404 si el path no coincide */}
+        <Route path="*" element={<div>Página no encontrada</div>} />
       </Routes>
     </>
   );
@@ -24,7 +27,7 @@ const AppRoutes = () => {
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/app-plantas"> {/* <-- ¡Cambia esta línea! */}
       <AppRoutes />
     </Router>
   );

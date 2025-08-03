@@ -28,10 +28,13 @@ const CartPage = () => {
           <div className="cart-items">
             {carrito.map((item) => (
               <div className="cart-item" key={item.id}>
-                <img src={item.imagen} alt={item.nombre} />
+                <img src={item.imagen} alt={item.nombre} style={{ width: 80, height: "auto", marginRight: 16 }} />
                 <div className="item-info">
                   <h4>{item.nombre}</h4>
                   <p>Precio unitario: ${item.precio}</p>
+                  <p>
+                    <strong>Total:</strong> ${(item.precio * item.cantidad).toFixed(2)}
+                  </p>
                   <div className="item-controls">
                     <button onClick={() => dispatch(decrementarCantidad(item.id))}>-</button>
                     <span>{item.cantidad}</span>
@@ -50,7 +53,7 @@ const CartPage = () => {
 
           <div className="cart-summary">
             <p>Total de artículos: {totalPlantas}</p>
-            <p>Total a pagar: ${costoTotal}</p>
+            <p>Total a pagar: ${costoTotal.toFixed(2)}</p>
             <button className="pagar" onClick={() => alert('Próximamente 💳')}>
               Pagar
             </button>
