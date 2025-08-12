@@ -63,7 +63,3 @@ Tienda de plantas hecha con React + Redux.
 
 ---
 
-**¡Listo!**  
-Ahora tu proyecto estará en GitHub y cualquier persona podrá clonar, instalar y correr tu app siguiendo el README.
-
-¿Quieres que te ayude a personalizar el README o tienes dudas sobre algún paso?
